@@ -9,6 +9,8 @@ dist/
 web-build/
 expo-env.d.ts
 
+app.config.ts
+
 # Native
 .kotlin/
 *.orig.*
