@@ -4,6 +4,21 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
 
 ## Get started
 
+0. Add .env File
+
+   1. Create a .env file in the root directory of your project:
+
+   ```bash
+   touch .env
+   ```
+
+   2. Open the .env file and add your environment variables:
+
+   ```ini
+   API_URL=https://api.example.com
+   API_KEY=your-api-key
+   ```
+
 1. Install dependencies
 
    ```bash
