@@ -1,4 +1,5 @@
 import {useStore} from '@/types/store';
+import {fetchRoute} from '@/util/dijkstra';
 import React, {useEffect, useState} from 'react';
 import {Dimensions, StyleSheet, useColorScheme, View} from 'react-native';
 import MapView, {Marker, PROVIDER_GOOGLE, Region} from 'react-native-maps';
@@ -58,6 +59,7 @@ const CustomMapView = () => {
         longitudeDelta:
           Math.abs(startLocation.longitude - endLocation.longitude) * 1.5,
       });
+      fetchRoute(startLocation, endLocation);
     }
   }, [startLocation, endLocation]);
 
